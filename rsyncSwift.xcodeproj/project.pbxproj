@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A425D851BB0143C00D1BA54 /* rsyncWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A425D831BB0143C00D1BA54 /* rsyncWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A425D861BB0143C00D1BA54 /* rsyncWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A425D841BB0143C00D1BA54 /* rsyncWrapper.mm */; };
+		2A425D891BB0144900D1BA54 /* RsyncClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A425D871BB0144900D1BA54 /* RsyncClient.swift */; };
+		2A425D8D1BB0145600D1BA54 /* DelegateHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A425D8B1BB0145600D1BA54 /* DelegateHandler.cpp */; };
+		2A425D8E1BB0145600D1BA54 /* DelegateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A425D8C1BB0145600D1BA54 /* DelegateHandler.h */; };
+		2AC969461BAFEE6B00E89D34 /* rsyncSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969451BAFEE6B00E89D34 /* rsyncSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AC9694C1BAFEE6B00E89D34 /* rsyncSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC969401BAFEE6B00E89D34 /* rsyncSwift.framework */; };
+		2AC969531BAFEE6B00E89D34 /* rsyncSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969521BAFEE6B00E89D34 /* rsyncSwiftTests.swift */; };
+		2AC969771BB001B800E89D34 /* rsync_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9695E1BB001B800E89D34 /* rsync_client.cpp */; };
+		2AC969781BB001B800E89D34 /* rsync_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC9695F1BB001B800E89D34 /* rsync_client.h */; };
+		2AC969791BB001B800E89D34 /* rsync_entry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969601BB001B800E89D34 /* rsync_entry.cpp */; };
+		2AC9697A1BB001B800E89D34 /* rsync_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969611BB001B800E89D34 /* rsync_entry.h */; };
+		2AC9697B1BB001B800E89D34 /* rsync_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969621BB001B800E89D34 /* rsync_file.cpp */; };
+		2AC9697C1BB001B800E89D34 /* rsync_file.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969631BB001B800E89D34 /* rsync_file.h */; };
+		2AC9697D1BB001B800E89D34 /* rsync_io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969641BB001B800E89D34 /* rsync_io.cpp */; };
+		2AC9697E1BB001B800E89D34 /* rsync_io.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969651BB001B800E89D34 /* rsync_io.h */; };
+		2AC9697F1BB001B800E89D34 /* rsync_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969661BB001B800E89D34 /* rsync_log.cpp */; };
+		2AC969801BB001B800E89D34 /* rsync_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969671BB001B800E89D34 /* rsync_log.h */; };
+		2AC969811BB001B800E89D34 /* rsync_pathutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969681BB001B800E89D34 /* rsync_pathutil.cpp */; };
+		2AC969821BB001B800E89D34 /* rsync_pathutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969691BB001B800E89D34 /* rsync_pathutil.h */; };
+		2AC969831BB001B800E89D34 /* rsync_socketio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9696A1BB001B800E89D34 /* rsync_socketio.cpp */; };
+		2AC969841BB001B800E89D34 /* rsync_socketio.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC9696B1BB001B800E89D34 /* rsync_socketio.h */; };
+		2AC969851BB001B800E89D34 /* rsync_socketutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9696C1BB001B800E89D34 /* rsync_socketutil.cpp */; };
+		2AC969861BB001B800E89D34 /* rsync_socketutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC9696D1BB001B800E89D34 /* rsync_socketutil.h */; };
+		2AC969871BB001B800E89D34 /* rsync_sshio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9696E1BB001B800E89D34 /* rsync_sshio.cpp */; };
+		2AC969881BB001B800E89D34 /* rsync_sshio.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC9696F1BB001B800E89D34 /* rsync_sshio.h */; };
+		2AC969891BB001B800E89D34 /* rsync_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969701BB001B800E89D34 /* rsync_stream.cpp */; };
+		2AC9698A1BB001B800E89D34 /* rsync_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969711BB001B800E89D34 /* rsync_stream.h */; };
+		2AC9698B1BB001B800E89D34 /* rsync_timeutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969721BB001B800E89D34 /* rsync_timeutil.cpp */; };
+		2AC9698C1BB001B800E89D34 /* rsync_timeutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969731BB001B800E89D34 /* rsync_timeutil.h */; };
+		2AC9698D1BB001B800E89D34 /* rsync_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC969741BB001B800E89D34 /* rsync_util.cpp */; };
+		2AC9698E1BB001B800E89D34 /* rsync_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969751BB001B800E89D34 /* rsync_util.h */; };
+		2AC969931BB0024200E89D34 /* block_out.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969921BB0024200E89D34 /* block_out.h */; };
+		2AC969971BB0024A00E89D34 /* qi-make.py in Resources */ = {isa = PBXBuildFile; fileRef = 2AC969951BB0024A00E89D34 /* qi-make.py */; };
+		2AC969981BB0024A00E89D34 /* qi_build.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC969961BB0024A00E89D34 /* qi_build.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AC9694D1BAFEE6B00E89D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC969371BAFEE6B00E89D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC9693F1BAFEE6B00E89D34;
+			remoteInfo = rsyncSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A425D831BB0143C00D1BA54 /* rsyncWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsyncWrapper.h; sourceTree = "<group>"; };
+		2A425D841BB0143C00D1BA54 /* rsyncWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = rsyncWrapper.mm; sourceTree = "<group>"; };
+		2A425D871BB0144900D1BA54 /* RsyncClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RsyncClient.swift; sourceTree = "<group>"; };
+		2A425D8B1BB0145600D1BA54 /* DelegateHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DelegateHandler.cpp; sourceTree = "<group>"; };
+		2A425D8C1BB0145600D1BA54 /* DelegateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateHandler.h; sourceTree = "<group>"; };
+		2AC969401BAFEE6B00E89D34 /* rsyncSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rsyncSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC969441BAFEE6B00E89D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC969451BAFEE6B00E89D34 /* rsyncSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsyncSwift.h; sourceTree = "<group>"; };
+		2AC9694B1BAFEE6B00E89D34 /* rsyncSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rsyncSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC969511BAFEE6B00E89D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC969521BAFEE6B00E89D34 /* rsyncSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rsyncSwiftTests.swift; sourceTree = "<group>"; };
+		2AC9695E1BB001B800E89D34 /* rsync_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_client.cpp; sourceTree = "<group>"; };
+		2AC9695F1BB001B800E89D34 /* rsync_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_client.h; sourceTree = "<group>"; };
+		2AC969601BB001B800E89D34 /* rsync_entry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_entry.cpp; sourceTree = "<group>"; };
+		2AC969611BB001B800E89D34 /* rsync_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_entry.h; sourceTree = "<group>"; };
+		2AC969621BB001B800E89D34 /* rsync_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_file.cpp; sourceTree = "<group>"; };
+		2AC969631BB001B800E89D34 /* rsync_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_file.h; sourceTree = "<group>"; };
+		2AC969641BB001B800E89D34 /* rsync_io.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_io.cpp; sourceTree = "<group>"; };
+		2AC969651BB001B800E89D34 /* rsync_io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_io.h; sourceTree = "<group>"; };
+		2AC969661BB001B800E89D34 /* rsync_log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_log.cpp; sourceTree = "<group>"; };
+		2AC969671BB001B800E89D34 /* rsync_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_log.h; sourceTree = "<group>"; };
+		2AC969681BB001B800E89D34 /* rsync_pathutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_pathutil.cpp; sourceTree = "<group>"; };
+		2AC969691BB001B800E89D34 /* rsync_pathutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_pathutil.h; sourceTree = "<group>"; };
+		2AC9696A1BB001B800E89D34 /* rsync_socketio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_socketio.cpp; sourceTree = "<group>"; };
+		2AC9696B1BB001B800E89D34 /* rsync_socketio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_socketio.h; sourceTree = "<group>"; };
+		2AC9696C1BB001B800E89D34 /* rsync_socketutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_socketutil.cpp; sourceTree = "<group>"; };
+		2AC9696D1BB001B800E89D34 /* rsync_socketutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_socketutil.h; sourceTree = "<group>"; };
+		2AC9696E1BB001B800E89D34 /* rsync_sshio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_sshio.cpp; sourceTree = "<group>"; };
+		2AC9696F1BB001B800E89D34 /* rsync_sshio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_sshio.h; sourceTree = "<group>"; };
+		2AC969701BB001B800E89D34 /* rsync_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_stream.cpp; sourceTree = "<group>"; };
+		2AC969711BB001B800E89D34 /* rsync_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_stream.h; sourceTree = "<group>"; };
+		2AC969721BB001B800E89D34 /* rsync_timeutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_timeutil.cpp; sourceTree = "<group>"; };
+		2AC969731BB001B800E89D34 /* rsync_timeutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_timeutil.h; sourceTree = "<group>"; };
+		2AC969741BB001B800E89D34 /* rsync_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rsync_util.cpp; sourceTree = "<group>"; };
+		2AC969751BB001B800E89D34 /* rsync_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsync_util.h; sourceTree = "<group>"; };
+		2AC969921BB0024200E89D34 /* block_out.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block_out.h; sourceTree = "<group>"; };
+		2AC969951BB0024A00E89D34 /* qi-make.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "qi-make.py"; sourceTree = "<group>"; };
+		2AC969961BB0024A00E89D34 /* qi_build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qi_build.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AC9693C1BAFEE6B00E89D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC969481BAFEE6B00E89D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC9694C1BAFEE6B00E89D34 /* rsyncSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AC969361BAFEE6B00E89D34 = {
+			isa = PBXGroup;
+			children = (
+				2AC969421BAFEE6B00E89D34 /* rsyncSwift */,
+				2AC9694F1BAFEE6B00E89D34 /* rsyncSwiftTests */,
+				2AC969411BAFEE6B00E89D34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AC969411BAFEE6B00E89D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969401BAFEE6B00E89D34 /* rsyncSwift.framework */,
+				2AC9694B1BAFEE6B00E89D34 /* rsyncSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AC969421BAFEE6B00E89D34 /* rsyncSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2A425D8B1BB0145600D1BA54 /* DelegateHandler.cpp */,
+				2A425D8C1BB0145600D1BA54 /* DelegateHandler.h */,
+				2A425D871BB0144900D1BA54 /* RsyncClient.swift */,
+				2A425D831BB0143C00D1BA54 /* rsyncWrapper.h */,
+				2A425D841BB0143C00D1BA54 /* rsyncWrapper.mm */,
+				2AC9695C1BB001B800E89D34 /* acrosync */,
+				2AC969451BAFEE6B00E89D34 /* rsyncSwift.h */,
+				2AC969431BAFEE6B00E89D34 /* Supporting Files */,
+			);
+			path = rsyncSwift;
+			sourceTree = "<group>";
+		};
+		2AC969431BAFEE6B00E89D34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969441BAFEE6B00E89D34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AC9694F1BAFEE6B00E89D34 /* rsyncSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969521BAFEE6B00E89D34 /* rsyncSwiftTests.swift */,
+				2AC969501BAFEE6B00E89D34 /* Supporting Files */,
+			);
+			path = rsyncSwiftTests;
+			sourceTree = "<group>";
+		};
+		2AC969501BAFEE6B00E89D34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969511BAFEE6B00E89D34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AC9695C1BB001B800E89D34 /* acrosync */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969941BB0024A00E89D34 /* qi */,
+				2AC969911BB0024200E89D34 /* block */,
+				2AC9695E1BB001B800E89D34 /* rsync_client.cpp */,
+				2AC9695F1BB001B800E89D34 /* rsync_client.h */,
+				2AC969601BB001B800E89D34 /* rsync_entry.cpp */,
+				2AC969611BB001B800E89D34 /* rsync_entry.h */,
+				2AC969621BB001B800E89D34 /* rsync_file.cpp */,
+				2AC969631BB001B800E89D34 /* rsync_file.h */,
+				2AC969641BB001B800E89D34 /* rsync_io.cpp */,
+				2AC969651BB001B800E89D34 /* rsync_io.h */,
+				2AC969661BB001B800E89D34 /* rsync_log.cpp */,
+				2AC969671BB001B800E89D34 /* rsync_log.h */,
+				2AC969681BB001B800E89D34 /* rsync_pathutil.cpp */,
+				2AC969691BB001B800E89D34 /* rsync_pathutil.h */,
+				2AC9696A1BB001B800E89D34 /* rsync_socketio.cpp */,
+				2AC9696B1BB001B800E89D34 /* rsync_socketio.h */,
+				2AC9696C1BB001B800E89D34 /* rsync_socketutil.cpp */,
+				2AC9696D1BB001B800E89D34 /* rsync_socketutil.h */,
+				2AC9696E1BB001B800E89D34 /* rsync_sshio.cpp */,
+				2AC9696F1BB001B800E89D34 /* rsync_sshio.h */,
+				2AC969701BB001B800E89D34 /* rsync_stream.cpp */,
+				2AC969711BB001B800E89D34 /* rsync_stream.h */,
+				2AC969721BB001B800E89D34 /* rsync_timeutil.cpp */,
+				2AC969731BB001B800E89D34 /* rsync_timeutil.h */,
+				2AC969741BB001B800E89D34 /* rsync_util.cpp */,
+				2AC969751BB001B800E89D34 /* rsync_util.h */,
+			);
+			path = acrosync;
+			sourceTree = "<group>";
+		};
+		2AC969911BB0024200E89D34 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969921BB0024200E89D34 /* block_out.h */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		2AC969941BB0024A00E89D34 /* qi */ = {
+			isa = PBXGroup;
+			children = (
+				2AC969951BB0024A00E89D34 /* qi-make.py */,
+				2AC969961BB0024A00E89D34 /* qi_build.h */,
+			);
+			path = qi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AC9693D1BAFEE6B00E89D34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC969781BB001B800E89D34 /* rsync_client.h in Headers */,
+				2A425D851BB0143C00D1BA54 /* rsyncWrapper.h in Headers */,
+				2AC969931BB0024200E89D34 /* block_out.h in Headers */,
+				2AC969461BAFEE6B00E89D34 /* rsyncSwift.h in Headers */,
+				2AC9698A1BB001B800E89D34 /* rsync_stream.h in Headers */,
+				2AC9697A1BB001B800E89D34 /* rsync_entry.h in Headers */,
+				2AC969981BB0024A00E89D34 /* qi_build.h in Headers */,
+				2AC9697E1BB001B800E89D34 /* rsync_io.h in Headers */,
+				2A425D8E1BB0145600D1BA54 /* DelegateHandler.h in Headers */,
+				2AC969861BB001B800E89D34 /* rsync_socketutil.h in Headers */,
+				2AC969881BB001B800E89D34 /* rsync_sshio.h in Headers */,
+				2AC9698C1BB001B800E89D34 /* rsync_timeutil.h in Headers */,
+				2AC969801BB001B800E89D34 /* rsync_log.h in Headers */,
+				2AC9697C1BB001B800E89D34 /* rsync_file.h in Headers */,
+				2AC969841BB001B800E89D34 /* rsync_socketio.h in Headers */,
+				2AC9698E1BB001B800E89D34 /* rsync_util.h in Headers */,
+				2AC969821BB001B800E89D34 /* rsync_pathutil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2AC9693F1BAFEE6B00E89D34 /* rsyncSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC969561BAFEE6B00E89D34 /* Build configuration list for PBXNativeTarget "rsyncSwift" */;
+			buildPhases = (
+				2AC9693B1BAFEE6B00E89D34 /* Sources */,
+				2AC9693C1BAFEE6B00E89D34 /* Frameworks */,
+				2AC9693D1BAFEE6B00E89D34 /* Headers */,
+				2AC9693E1BAFEE6B00E89D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rsyncSwift;
+			productName = rsyncSwift;
+			productReference = 2AC969401BAFEE6B00E89D34 /* rsyncSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2AC9694A1BAFEE6B00E89D34 /* rsyncSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC969591BAFEE6B00E89D34 /* Build configuration list for PBXNativeTarget "rsyncSwiftTests" */;
+			buildPhases = (
+				2AC969471BAFEE6B00E89D34 /* Sources */,
+				2AC969481BAFEE6B00E89D34 /* Frameworks */,
+				2AC969491BAFEE6B00E89D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC9694E1BAFEE6B00E89D34 /* PBXTargetDependency */,
+			);
+			name = rsyncSwiftTests;
+			productName = rsyncSwiftTests;
+			productReference = 2AC9694B1BAFEE6B00E89D34 /* rsyncSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AC969371BAFEE6B00E89D34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Viktor Braun - dev-things.net";
+				TargetAttributes = {
+					2AC9693F1BAFEE6B00E89D34 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2AC9694A1BAFEE6B00E89D34 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 2AC9693A1BAFEE6B00E89D34 /* Build configuration list for PBXProject "rsyncSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2AC969361BAFEE6B00E89D34;
+			productRefGroup = 2AC969411BAFEE6B00E89D34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AC9693F1BAFEE6B00E89D34 /* rsyncSwift */,
+				2AC9694A1BAFEE6B00E89D34 /* rsyncSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AC9693E1BAFEE6B00E89D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC969971BB0024A00E89D34 /* qi-make.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC969491BAFEE6B00E89D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AC9693B1BAFEE6B00E89D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC969811BB001B800E89D34 /* rsync_pathutil.cpp in Sources */,
+				2AC969871BB001B800E89D34 /* rsync_sshio.cpp in Sources */,
+				2AC9697F1BB001B800E89D34 /* rsync_log.cpp in Sources */,
+				2AC9698D1BB001B800E89D34 /* rsync_util.cpp in Sources */,
+				2AC969851BB001B800E89D34 /* rsync_socketutil.cpp in Sources */,
+				2AC969791BB001B800E89D34 /* rsync_entry.cpp in Sources */,
+				2AC969771BB001B800E89D34 /* rsync_client.cpp in Sources */,
+				2AC9698B1BB001B800E89D34 /* rsync_timeutil.cpp in Sources */,
+				2A425D861BB0143C00D1BA54 /* rsyncWrapper.mm in Sources */,
+				2AC9697B1BB001B800E89D34 /* rsync_file.cpp in Sources */,
+				2A425D891BB0144900D1BA54 /* RsyncClient.swift in Sources */,
+				2AC969891BB001B800E89D34 /* rsync_stream.cpp in Sources */,
+				2A425D8D1BB0145600D1BA54 /* DelegateHandler.cpp in Sources */,
+				2AC9697D1BB001B800E89D34 /* rsync_io.cpp in Sources */,
+				2AC969831BB001B800E89D34 /* rsync_socketio.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC969471BAFEE6B00E89D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC969531BAFEE6B00E89D34 /* rsyncSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AC9694E1BAFEE6B00E89D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC9693F1BAFEE6B00E89D34 /* rsyncSwift */;
+			targetProxy = 2AC9694D1BAFEE6B00E89D34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AC969541BAFEE6B00E89D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AC969551BAFEE6B00E89D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AC969571BAFEE6B00E89D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					__APPLE__,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/rsyncSwift/external/openssl-1.0.1p/include\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/libssh2-1.6.0/include\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/libiconv-1.14/include\"/**",
+				);
+				INFOPLIST_FILE = rsyncSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/rsyncSwift/external/openssl-libs\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/ssh-libs\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/z-libs\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/iconv-libs\"/**",
+				);
+				OTHER_LDFLAGS = (
+					"-lssh2",
+					"-lz",
+					"-lcrypto",
+					"-liconv",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Debug;
+		};
+		2AC969581BAFEE6B00E89D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = __APPLE__;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/rsyncSwift/external/openssl-1.0.1p/include\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/libssh2-1.6.0/include\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/libiconv-1.14/include\"/**",
+				);
+				INFOPLIST_FILE = rsyncSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/rsyncSwift/external/openssl-libs\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/ssh-libs\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/z-libs\"/**",
+					"\"$(SRCROOT)/rsyncSwift/external/iconv-libs\"/**",
+				);
+				OTHER_LDFLAGS = (
+					"-lssh2",
+					"-lz",
+					"-lcrypto",
+					"-liconv",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		2AC9695A1BAFEE6B00E89D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = rsyncSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AC9695B1BAFEE6B00E89D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = rsyncSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AC9693A1BAFEE6B00E89D34 /* Build configuration list for PBXProject "rsyncSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC969541BAFEE6B00E89D34 /* Debug */,
+				2AC969551BAFEE6B00E89D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC969561BAFEE6B00E89D34 /* Build configuration list for PBXNativeTarget "rsyncSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC969571BAFEE6B00E89D34 /* Debug */,
+				2AC969581BAFEE6B00E89D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC969591BAFEE6B00E89D34 /* Build configuration list for PBXNativeTarget "rsyncSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC9695A1BAFEE6B00E89D34 /* Debug */,
+				2AC9695B1BAFEE6B00E89D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AC969371BAFEE6B00E89D34 /* Project object */;
+}
