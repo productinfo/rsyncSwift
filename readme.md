@@ -1,6 +1,6 @@
 # rsyncSwift
 
-By [v-braun - www.dev-things.net](http://www.dev-things.net).
+By [v-braun - viktor-braun.de](https://viktor-braun.de).
 
 ## Description
 Swift Wrapper around the [acrosync-library](https://github.com/gilbertchen/acrosync-library).
